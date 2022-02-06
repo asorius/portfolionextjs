@@ -1,0 +1,15 @@
+.burger {
+  height: 100%;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+}
+.burger div {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
