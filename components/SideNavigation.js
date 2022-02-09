@@ -8,7 +8,7 @@ export default function SideNavigation({ active = false, fn }) {
     ' first-letter:text-1xl first-letter:font-bold  hover:text-emerald-700';
   return (
     <div
-      className={` w-screen h-screen absolute top-0 right-0  ease-in-out duration-800 z-30   ${toggleClasses} `}>
+      className={` w-screen h-screen absolute top-0 right-0  ease-in-out duration-800 z-30   ${toggleClasses} lg:hidden`}>
       <div
         className={` w-1/2 h-full absolute top-0 right-0  ease-in-out duration-300 backdrop-blur-md bg-white/95 dark:bg-neutral-700/95 drop-shadow-md ${toggleClasses} flex flex-col justify-center items-center rounded`}>
         <ul

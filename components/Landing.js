@@ -20,7 +20,9 @@ export default function Landing() {
           <h2 className='text-3xl text-text-primary dark:text-text-primary-dark pb-8 pt-4 animate-fade-in-long'>
             Web Developer
           </h2>
-          <button className='animate-fade-in-long bg-accent dark:bg-accent-pink  text-text-primary-dark dark:text-text-primary-dark font-semibold py-2 px-4  rounded '>
+          <button
+            title='See my projects'
+            className='animate-fade-in-long bg-accent dark:bg-accent-pink  text-text-primary-dark dark:text-text-primary-dark font-semibold py-2 px-4  rounded '>
             <Link href='#projects'>
               <a>
                 My Projects{' '}

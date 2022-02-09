@@ -77,6 +77,7 @@ export default function ProjectCard({
           <div className='w-full pt-4 flex items-center justify-end '>
             <a
               href={details.links.hub}
+              title='Source code'
               target='_blank'
               className='inline-block'
               aria-label='autopare app source'
@@ -89,6 +90,7 @@ export default function ProjectCard({
             <a
               href={details.links.live}
               target='_blank'
+              title='Live page'
               className='inline-block'
               aria-label='autopare app host'
               rel='noopener noreferrer'>

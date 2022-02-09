@@ -8,7 +8,8 @@ export default function Burger({ active, toggler }) {
   const divStyles = `h-full w-8 flex flex-col justify-around relative z-40 cursor-pointer `;
   return (
     <div
-      className={divStyles}
+      className={`${divStyles} lg:hidden`}
+      title='Navigation menu'
       onClick={() => {
         toggler(!active);
       }}>

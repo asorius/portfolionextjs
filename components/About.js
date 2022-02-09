@@ -27,7 +27,10 @@ export default function About() {
 
               <div className='flex justify-end items-center mt-6 -mx-2 md:justify-end'>
                 <Link href='https://linkedin.com'>
-                  <a className='mx-2 inline-block' aria-label='Linkden'>
+                  <a
+                    className='mx-2 inline-block'
+                    title='My LinkedIn'
+                    aria-label='Linkden'>
                     <svg
                       className='w-7 h-7 text-accent fill-current dark:text-accent-dark-btn hover:text-accent-pink dark:hover:text-accent-pink hover:scale-125 duration-300'
                       xmlns='http://www.w3.org/2000/svg'
@@ -38,9 +41,8 @@ export default function About() {
                 </Link>
                 <Link
                   href='https://github.com/asorius'
-                  className='mx-2 inline-block'
-                  ariaLabel='Github'>
-                  <a>
+                  className='mx-2 inline-block'>
+                  <a title='My Github'>
                     <svg
                       className='w-7 h-7 text-text-primary fill-current dark:text-text-primary-dark hover:text-accent-pink dark:hover:text-accent-pink hover:scale-125 duration-300'
                       xmlns='http://www.w3.org/2000/svg'
@@ -49,11 +51,13 @@ export default function About() {
                     </svg>
                   </a>
                 </Link>
-                <Link href='mailto:sorius.arturas@gmail.com'>
-                  <a className='mx-2 inline-block'>
+                <Link
+                  href='mailto:sorius.arturas@gmail.com'
+                  title='Send me email'>
+                  <a title='Send me email' className='mx-2 inline-block'>
                     <FontAwesomeIcon
                       icon={faEnvelope}
-                      className='transition duration-300 hover:scale-112 w-7 h-7 text-text-primary fill-current dark:text-text-primary-dark dark:hover:text-accent-pink hover:text-accent-pink hover:scale-125 duration-300'
+                      className='transition duration-300 hover:scale-112 w-7 h-7 text-text-primary fill-current dark:text-text-primary-dark dark:hover:text-accent-pink hover:text-accent-pink hover:scale-125'
                     />
                   </a>
                 </Link>
