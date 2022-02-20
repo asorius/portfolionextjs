@@ -1,12 +1,15 @@
 import React from 'react';
 import { heading1 } from './utils';
 import ProjectCard from './ProjectCard';
+import Heading from './Heading';
 export default function Projects() {
   return (
     <article
       className='w-full min-h-screen  before:h-12 before:block'
       id='projects'>
-      <h2 className={heading1}>Projects</h2>
+      <h2 className={heading1}>
+        <Heading title='Projects' direction={true}></Heading>
+      </h2>
       <div className='mt-8 pt-4 pb-8 -z-1 container mx-auto lg:grid lg:grid-cols-2 lg:max-w-4xl lg:place-items-start'>
         <ProjectCard
           name='AutoPare'

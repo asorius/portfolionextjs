@@ -10,10 +10,10 @@ module.exports = {
       colors: {
         'text-primary': colors.neutral[700],
         'text-primary-dark': colors.neutral[50],
-        accent: colors.cyan[800],
-        'accent-dark': colors.cyan[700],
-        'accent-dark-btn': colors.cyan[400],
-        'accent-pink': colors.pink[500],
+        accent: colors.teal[700],
+        'accent-dark': colors.teal[600],
+        'accent-dark-btn': colors.teal[400],
+        'accent-pink': colors.rose[600],
         'bg-light': colors.neutral[50],
         'bg-dark': colors.neutral[700],
         container: colors.neutral[100],
@@ -48,6 +48,16 @@ module.exports = {
             opacity: '1',
           },
         },
+        'slide-in-right': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-100%)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
         baller: {
           from: {
             offsetDistance: '0%',
@@ -72,6 +82,7 @@ module.exports = {
         'fade-in-long': 'fade-in 2s linear ',
         baller: 'baller 5s linear  infinite',
         liner: 'liner 1s linear forwards',
+        slideright: 'slide-in-right 1s linear forwards',
       },
     },
   },

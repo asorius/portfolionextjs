@@ -11,12 +11,15 @@ import expressIcon from './icons/express.svg';
 import Image from 'next/image';
 import FadeInner from './FadeInner';
 import Skewed from './Skewed';
+import Heading from './Heading';
 export default function Skills() {
   return (
     <article
-      className='w-full before:h-12 before:block bg-container dark:bg-container-dark pb-10'
+      className='w-full before:h-12 before:block bg-container dark:bg-container-dark pb-20 overflow-hidden'
       id='skills'>
-      <h2 className={'dark:text-text-primary ' + heading1}>Skills</h2>
+      <h2 className={heading1}>
+        <Heading title='Skills' size='20rem' />
+      </h2>
       <FadeInner>
         <div className='mt-8 pt-4 rounded -z-1 max-w-2xl mx-auto'>
           <div>
@@ -33,7 +36,7 @@ export default function Skills() {
           </div>
           <div>
             <h3 className={heading2}>
-              <Skewed text='Backend' color='accent' />
+              <Skewed text='Backend' background='bg-accent' />
             </h3>
             <div className='grid gap-8 grid-cols-3 p-8'>
               <Image src={nodejsIcon} width={90} height={90} alt='icon' />
