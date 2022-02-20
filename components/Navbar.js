@@ -12,7 +12,7 @@ export default function Navbar() {
       }>
       <div
         className={
-          'h-12 p-2 px-6 fixed top-0 left-0 right-0 flex flex-row justify-between backdrop-blur-md drop-shadow-md z-30 w-full max-w-4xl mx-auto'
+          'h-12  p-2 px-6 fixed top-0 left-0 right-0 flex flex-row justify-between  backdrop-blur-md drop-shadow-md z-30 w-full max-w-6xl mx-auto'
         }>
         <CornerLogo active={active} />
         <Burger toggler={setActive} active={active} />
