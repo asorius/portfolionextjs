@@ -23,7 +23,7 @@ export default function ProjectCard({
     <div
       ref={domRef}
       className={`relative flex flex-col items-center justify-center max-w-sm mx-auto p-2 m-10 py-10 ${
-        isVisible ? 'animate-fade-in-down' : 'animate-fade-out'
+        isVisible ? 'animate-fader' : 'animate-fade-out'
       }`}>
       <div
         className='w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md'

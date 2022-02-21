@@ -14,9 +14,7 @@ export default function FadeInner({ children }) {
   return (
     <div
       ref={domRef}
-      className={`  ${
-        isVisible ? 'animate-fade-in-down' : 'animate-fade-out'
-      }`}>
+      className={`  ${isVisible ? 'animate-fader' : 'animate-fade-out'}`}>
       {children}
     </div>
   );

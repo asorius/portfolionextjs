@@ -58,6 +58,11 @@ module.exports = {
             transform: 'translateX(0)',
           },
         },
+        'hover-animation': {
+          '100%': {
+            transform: 'scale(0)',
+          },
+        },
         baller: {
           from: {
             offsetDistance: '0%',
@@ -79,6 +84,7 @@ module.exports = {
       },
       animation: {
         'fade-in-down': '3s fade-in-down 3s ease-out forwards',
+        fader: 'fade-in-down 1s ease-out forwards',
         'fade-in-down-nav': '1s fade-in-down 2s ease-out forwards',
         'fade-in': 'fade-in  2s linear forwards',
         'fade-out': 'fade-out  1s linear forwards',
@@ -89,6 +95,7 @@ module.exports = {
         liner: '1.6s liner 1s linear forwards',
         baller: 'baller 5s linear  infinite',
         slideright: 'slide-in-right 1s linear forwards',
+        hoverer: 'hover-animation .2s linear forwards',
       },
     },
   },
