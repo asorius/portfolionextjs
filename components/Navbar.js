@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div
       className={
-        'h-12 fixed top-0 left-0 backdrop-blur-md drop-shadow-md w-full z-30'
+        'h-12 fixed top-0 left-0 backdrop-blur-md drop-shadow-md w-full z-30 opacity-0 animate-fade-in-down-nav'
       }>
       <div
         className={
