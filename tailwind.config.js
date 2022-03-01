@@ -97,6 +97,9 @@ module.exports = {
         slideright: 'slide-in-right 1s linear forwards',
         hoverer: 'hover-animation .2s linear forwards',
       },
+      backgroundImage: {
+        'svg-pattern': "url('/public/stargrid.svg')",
+      },
     },
   },
   plugins: [],

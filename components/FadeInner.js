@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FadeInner({ children }) {
+export default function FadeInner({ children, parentClassName = '' }) {
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();
   React.useEffect(() => {
@@ -14,7 +14,9 @@ export default function FadeInner({ children }) {
   return (
     <div
       ref={domRef}
-      className={`  ${isVisible ? 'animate-fader' : 'animate-fade-out'}`}>
+      className={`${
+        isVisible ? 'animate-fader' : 'animate-fade-out'
+      } ${parentClassName}`}>
       {children}
     </div>
   );

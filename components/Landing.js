@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import Logo from './Logo';
 import Atom from './Atom';
+import FadeInner from './FadeInner';
 export default function Landing() {
-  const divPrinter = () => {
+  const svgLister = () => {
     let svgs = [];
     for (let i = 0; i < 200; i++) {
       svgs.push(
@@ -16,8 +17,7 @@ export default function Landing() {
           <svg
             xmlns='http://www.w3.org/2000/svg'
             className='h-3 w-3  hover:animate-hoverer'
-            viewBox='0 0 24 24'
-            s>
+            viewBox='0 0 24 24'>
             <path
               strokeLinecap='round'
               strokeLinejoin='round'
@@ -28,7 +28,6 @@ export default function Landing() {
         </div>
       );
     }
-    console.log(svgs.length);
     return svgs;
   };
   return (
@@ -36,16 +35,16 @@ export default function Landing() {
       id='home'
       className='h-screen bg-neutral-300 dark:bg-neutral-900 text-text-primary dark:text-text-primary-dark relative '>
       <Navbar></Navbar>
-      <div className='flex flex-col justify-center items-center h-full '>
-        <div className='hidden absolute w-2/6 h-screen top-36 left-11 lg:grid grid-rows-[repeat(20,minmax(0,1fr))] grid-cols-[repeat(10,minmax(0,1fr))]'>
-          {divPrinter().map((el) => el)}
-        </div>
+      <div className='flex flex-col justify-center items-center h-full relative'>
+        <FadeInner parentClassName='hidden absolute w-2/6 h-screen top-36 left-11 lg:grid grid-rows-[repeat(20,minmax(0,1fr))] grid-cols-[repeat(10,minmax(0,1fr))]'>
+          {svgLister().map((el) => el)}
+        </FadeInner>
         <div className='h-1/2 flex justify-center items-center z-10'>
           <Logo />
         </div>
         <div className=' w-full flex flex-col justify-between items-center pb-4'>
           <Atom />
-          <h2 className='text-3xl text-text-primary dark:text-text-primary-dark pb-8 pt-4 opacity-0 animate-fade-in-long '>
+          <h2 className='text-3xl text-text-primary dark:text-text-primary-dark pb-8 pt-4 mb-12 opacity-0 animate-fade-in-long '>
             Web Developer
           </h2>
           <button
