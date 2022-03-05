@@ -31,8 +31,8 @@ export default function ProjectCard({
           backgroundImage: `url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)`,
         }}></div>
 
-      <div className='w-56 -mt-10 overflow-hidden bg-accent rounded-lg shadow-lg md:w-64 dark:bg-accent-dark z-20 '>
-        <h3 className='py-2 font-bold tracking-wide text-center text-text-primary-dark uppercase '>
+      <div className='w-56 -mt-10 overflow-hidden bg-accent rounded-lg shadow-lg md:w-64 dark:bg-accent-darkmode z-20 '>
+        <h3 className='py-2 font-bold tracking-wide text-center text-text-primary-darkmode uppercase '>
           {name}
         </h3>
 
@@ -42,7 +42,7 @@ export default function ProjectCard({
           </span>
           <button
             className={`px-2 py-1 text-xs  text-white  transition-colors duration-200 transform lg:hidden ${
-              isOpen ? 'bg-gray-400' : 'bg-accent-pink'
+              isOpen ? 'bg-gray-400' : 'bg-accent-secondary'
             } rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none`}
             onClick={() => {
               setOpen(!isOpen);
@@ -62,8 +62,10 @@ export default function ProjectCard({
           <div className='p-2 font-thin'>{details.comment}</div>
           <div className='w-1/2 mx-auto'>
             <h4 className='font-semibold text-md p-4'>
-              <span className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent-pink relative inline-block'>
-                <span className='relative text-text-primary-dark'>Stack</span>
+              <span className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent-secondary relative inline-block'>
+                <span className='relative text-text-primary-darkmode'>
+                  Stack
+                </span>
               </span>
             </h4>
             <ul className='list-outside'>
@@ -84,7 +86,7 @@ export default function ProjectCard({
               rel='noopener noreferrer'>
               <FontAwesomeIcon
                 icon={faCode}
-                className='transition duration-300 text-accent dark:text-accent-dark-btn h-8 w-8  mr-8 dark:hover:text-accent-pink hover:text-accent-pink hover:scale-125'
+                className='transition duration-300 text-accent dark:text-accent-darkmode-btn h-8 w-8  mr-8 dark:hover:text-accent-secondary hover:text-accent-secondary hover:scale-125'
               />
             </a>
             <a
@@ -96,7 +98,7 @@ export default function ProjectCard({
               rel='noopener noreferrer'>
               <FontAwesomeIcon
                 icon={faExternalLinkAlt}
-                className='transition duration-300 hover:scale-125 text-text-primary dark:text-text-primary-dark h-6 w-6 dark:hover:text-accent-pink hover:text-accent-pink '
+                className='transition duration-300 hover:scale-125 text-text-primary dark:text-text-primary-darkmode h-6 w-6 dark:hover:text-accent-secondary hover:text-accent-secondary '
               />
             </a>
           </div>

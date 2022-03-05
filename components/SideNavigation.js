@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function SideNavigation({ active = false, fn }) {
   const toggleClasses = active ? 'translate-x-0 ' : 'translate-x-[150%] ';
   const liClass =
-    'text-text-primary dark:text-text-primary-dark font-medium h-full flex items-center justify-center first-letter:text-1xl first-letter:font-bold cursor-pointer';
+    'text-text-primary dark:text-text-primary-darkmode font-medium h-full flex items-center justify-center first-letter:text-1xl first-letter:font-bold cursor-pointer';
   const aClass =
     ' first-letter:text-1xl first-letter:font-bold  hover:text-emerald-700';
   return (

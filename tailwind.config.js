@@ -9,11 +9,12 @@ module.exports = {
     extend: {
       colors: {
         'text-primary': colors.neutral[700],
-        'text-primary-dark': colors.neutral[50],
+        'text-primary-darkmode': colors.neutral[50],
         accent: colors.teal[700],
-        'accent-dark': colors.teal[600],
+        'accent-darkmode': colors.teal[600],
         'accent-dark-btn': colors.teal[400],
-        'accent-pink': colors.rose[600],
+        'accent-secondary': colors.rose[600],
+        'accent-secondary-darkmode': colors.rose[600],
         'bg-light': colors.neutral[50],
         'bg-dark': colors.neutral[700],
         container: colors.neutral[100],
