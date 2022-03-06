@@ -3,6 +3,9 @@ import { heading1 } from './utils';
 import ProjectCard from './ProjectCard';
 import Heading from './Heading';
 import FadeInner from './FadeInner';
+import atp from '../public/atp.png';
+import port from '../public/port.png';
+import wap from '../public/wap.png';
 export default function Projects() {
   return (
     <article
@@ -49,6 +52,7 @@ export default function Projects() {
         <ProjectCard
           name='AutoPare'
           subtitle='Frontend/Backend'
+          src={atp}
           details={{
             comment:
               'Web app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists. Due to Autotraders move to GraphQL, website is no longer functional.',
