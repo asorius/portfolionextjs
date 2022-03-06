@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'text-primary': colors.neutral[700],
-        'text-primary-darkmode': colors.neutral[50],
-        accent: colors.teal[700],
-        'accent-darkmode': colors.teal[600],
-        'accent-dark-btn': colors.teal[400],
-        'accent-secondary': colors.rose[600],
-        'accent-secondary-darkmode': colors.rose[600],
+        'text-dark': colors.neutral[700],
+        'text-light': colors.neutral[50],
+        accent: '#005f73',
+        'accent-darkmode': '#94d2bd',
+        'button-primary': '#e63946',
+        'accent-secondary': '#ee9b00',
+        'accent-secondary-darkmode': '#e9d8a6',
         'bg-light': colors.neutral[50],
         'bg-dark': colors.neutral[700],
         container: colors.neutral[100],
@@ -82,6 +82,23 @@ module.exports = {
             opacity: 1,
           },
         },
+        waving: {
+          '0%': {
+            transform: 'translate(-5px)',
+          },
+          '25%': {
+            transform: 'translate(5px,2px )',
+          },
+          '50%': {
+            transform: 'translate(-5px)',
+          },
+          '75%': {
+            transform: 'translate(5px,-2px)',
+          },
+          '100%': {
+            transform: 'translate(-5px)',
+          },
+        },
       },
       animation: {
         'fade-in-down': '3s fade-in-down 3s ease-out forwards',
@@ -97,6 +114,8 @@ module.exports = {
         baller: 'baller 5s linear  infinite',
         slideright: 'slide-in-right 1s linear forwards',
         hoverer: 'hover-animation .2s linear forwards',
+        wave1: ' waving 4s ease-in-out   infinite',
+        wave2: ' waving 5.3s ease-in-out   infinite',
       },
       backgroundImage: {
         'svg-pattern': "url('/public/stargrid.svg')",

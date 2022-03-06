@@ -23,7 +23,7 @@ export default function Home() {
   };
   // console.log(window.matchMedia('(prefers-color-scheme: dark)'));
   return (
-    <div className='bg-bg-light dark:bg-bg-dark '>
+    <div className='bg-bg-light dark:bg-bg-dark relative'>
       <Bulb theme={theme} toggler={toggleTheme} />
       <Head>
         <title>A.Sorius</title>
@@ -39,6 +39,7 @@ export default function Home() {
           rel='stylesheet'
         />
       </Head>
+
       <Landing></Landing>
       <main className='w-full'>
         <Skills />

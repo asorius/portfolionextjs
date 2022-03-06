@@ -5,7 +5,7 @@ export default function CornerLogo({ active }) {
   return (
     <div
       title='Home'
-      className={` ${toggleClasses} h-full text-2xl pr-4 font-semibold flex flex-row justify-center z-10 ease-in-out duration-1000 cursor-pointer`}>
+      className={` ${toggleClasses} h-full text-2xl pr-4 font-semibold flex flex-row justify-center z-10 ease-in-out duration-1000 cursor-pointer dark:text-text-light`}>
       <Link href='#home'>
         <a>
           <span className='relative pr-2'>
