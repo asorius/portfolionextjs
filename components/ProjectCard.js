@@ -32,7 +32,7 @@ export default function ProjectCard({
         }}></div>
 
       <div className='w-56 -mt-10 overflow-hidden bg-accent rounded-lg shadow-lg md:w-64 dark:bg-accent-secondary z-20 '>
-        <h3 className='py-2 font-bold tracking-wide text-center text-text-light dark:text-text-dark '>
+        <h3 className='py-2  tracking-wide text-center text-text-light dark:text-text-dark '>
           {name}
         </h3>
 
