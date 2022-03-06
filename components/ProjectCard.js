@@ -1,3 +1,4 @@
+import ImageModal from './ImageModal';
 import React from 'react';
 
 import { faExternalLinkAlt, faCode } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +7,7 @@ export default function ProjectCard({
   name = 'Default name',
   subtitle = 'Subtitle',
   details = 'Placeholder',
+  src = false,
 }) {
   const [isVisible, setVisible] = React.useState(true);
   const [isOpen, setOpen] = React.useState(false);
@@ -25,11 +27,7 @@ export default function ProjectCard({
       className={`relative flex flex-col items-center justify-center max-w-sm mx-auto p-2 m-10 py-10 lg:max-h-[50rem] ${
         isVisible ? 'animate-fader' : 'animate-fade-out'
       }`}>
-      <div
-        className='w-full h-64 lg:h-80 bg-gray-300 bg-center bg-cover rounded-lg shadow-md'
-        style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)`,
-        }}></div>
+      <ImageModal src={src} />
 
       <div className='w-56 -mt-10 overflow-hidden bg-accent rounded-lg shadow-lg md:w-64 dark:bg-accent-secondary z-20 '>
         <h3 className='py-2  tracking-wide text-center text-text-light dark:text-text-dark '>
