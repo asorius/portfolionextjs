@@ -51,7 +51,7 @@ export default function Projects() {
           subtitle='Frontend/Backend'
           details={{
             comment:
-              'Web app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists.',
+              'Web app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists. Due to Autotraders move to GraphQL, website is no longer functional.',
             stack: [
               'React',
               'Material UI',
@@ -70,7 +70,7 @@ export default function Projects() {
           subtitle='Frontend'
           details={{
             comment:
-              'Current portfolio page version. Main purpose was to use implement TailwindCSS and NextJS.',
+              'Current portfolio page version. Main purpose was to use implement TailwindCSS, NextJS and to improve on web designing.',
             stack: ['React', 'NextJS', 'TailwindCSS'],
             links: {
               live: 'https://asorius.netlify.com/',
@@ -94,7 +94,7 @@ export default function Projects() {
           subtitle='Frontend'
           details={{
             comment:
-              'Attempt to create reusable custom styled calendar component with booking option.',
+              'Attempt to create reusable custom styled calendar component with booking option. ',
             stack: ['React', 'TypeScript'],
             links: {
               live: 'https://autopare.herokuapp.com/',
@@ -105,7 +105,8 @@ export default function Projects() {
           name='Weather Checker'
           subtitle='Frontend'
           details={{
-            comment: "Early project to practice working with React and API's.",
+            comment:
+              "Early project to practice working with React and API's. Dynamic search result display, data storage in localstorage.",
             stack: ['React', 'WeatherAPI'],
             links: {
               live: 'https://asorius.github.io/WeatherApp/',
