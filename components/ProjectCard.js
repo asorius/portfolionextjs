@@ -65,7 +65,7 @@ export default function ProjectCard({
           <div className='w-1/2 mx-auto lg:grow'>
             <h4 className='font-semibold text-md p-4'>
               <span className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent-secondary before:dark:bg-accent-darkmode  relative inline-block'>
-                <span className='relative text-text-light dark:text-text-dark'>
+                <span className='relative text-text-light dark:text-text-dark lg:text-lg'>
                   Stack
                 </span>
               </span>
