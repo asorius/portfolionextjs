@@ -45,7 +45,7 @@ export default function Projects() {
           </g>
         </svg>
       </FadeInner>
-      <div className='mt-8 pt-4 pb-8 -z-1 container mx-auto lg:grid lg:grid-cols-2 lg:max-w-4xl lg:place-items-start bg-svg-pattern'>
+      <div className='mt-8 pt-4 pb-8 -z-1 container mx-auto lg:grid lg:grid-cols-2 lg:max-w-4xl lg:place-items-stretch bg-svg-pattern'>
         <ProjectCard
           name='AutoPare'
           subtitle='Frontend/Backend'

@@ -22,11 +22,11 @@ export default function ProjectCard({
   return (
     <div
       ref={domRef}
-      className={`relative flex flex-col items-center justify-center max-w-sm mx-auto p-2 m-10 py-10 ${
+      className={`relative flex flex-col items-center justify-center max-w-sm mx-auto p-2 m-10 py-10 lg:max-h-[48rem] ${
         isVisible ? 'animate-fader' : 'animate-fade-out'
       }`}>
       <div
-        className='w-full h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md'
+        className='w-full h-64 lg:h-80 bg-gray-300 bg-center bg-cover rounded-lg shadow-md'
         style={{
           backgroundImage: `url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)`,
         }}></div>
@@ -37,7 +37,7 @@ export default function ProjectCard({
         </h3>
 
         <div className='flex items-center justify-between px-3 py-2  bg-gray-200 dark:bg-gray-900'>
-          <span className='font-bold text-sm text-gray-800 dark:text-gray-200 lg:text-center lg:w-full '>
+          <span className='font-bold text-sm text-gray-800 dark:text-gray-200 lg:text-center lg:w-full lg:h-14'>
             {subtitle}
           </span>
           <button
@@ -53,14 +53,16 @@ export default function ProjectCard({
         </div>
       </div>
       <div
-        className={` w-full duration-700 h-0 rounded drop-shadow-lg -mt-10 dark:text-text-dark-dark text-center  lg:z-10 ${
+        className={` w-full duration-700 h-0 rounded drop-shadow-lg -mt-10 dark:text-text-dark-dark text-center lg:z-10 ${
           isOpen
             ? 'translate-y-0 z-10 scale-1 h-auto '
-            : '-translate-y-16 -z-10 scale-0 lg:h-auto lg:scale-100 lg:translate-y-2'
+            : '-translate-y-16 -z-10 scale-0 lg:h-full lg:scale-100 lg:translate-y-1'
         }`}>
-        <div className='bg-gray-200 dark:bg-gray-700 text-text-dark dark:text-text-light h-full w-full p-4 rounded-lg pt-14 '>
-          <div className='p-2 font-thin'>{details.comment}</div>
-          <div className='w-1/2 mx-auto'>
+        <div className='bg-gray-200 dark:bg-gray-700 text-text-dark dark:text-text-light h-full w-full p-4 flex flex-col rounded-lg pt-14 '>
+          <div className='p-2 font-thin lg:min-h-[8rem] lg:flex lg:flex-col lg:justify-center'>
+            {details.comment}
+          </div>
+          <div className='w-1/2 mx-auto lg:grow'>
             <h4 className='font-semibold text-md p-4'>
               <span className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-accent-secondary before:dark:bg-accent-darkmode  relative inline-block'>
                 <span className='relative text-text-light dark:text-text-dark'>
@@ -68,7 +70,7 @@ export default function ProjectCard({
                 </span>
               </span>
             </h4>
-            <ul className='list-outside'>
+            <ul className='list-outside lg:pt-4'>
               {details.stack.map((el, i) => (
                 <li className='' key={i}>
                   {el}
