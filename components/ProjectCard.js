@@ -42,7 +42,7 @@ export default function ProjectCard({
           </span>
           <button
             className={`px-2 py-1 text-xs  text-white  transition-colors duration-200 transform lg:hidden ${
-              isOpen ? 'bg-gray-400' : 'bg-accent-secondary'
+              isOpen ? 'bg-gray-400' : 'bg-button-primary'
             } rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none`}
             onClick={() => {
               setOpen(!isOpen);
