@@ -6,7 +6,7 @@ import FadeInner from './FadeInner';
 import atp from '../public/atp.png';
 import port from '../public/port.png';
 import wap from '../public/wap.png';
-export default function Projects() {
+export default function Projects({ modalHandler }) {
   return (
     <article
       className='w-full min-h-screen before:h-12 before:block relative'
@@ -53,6 +53,7 @@ export default function Projects() {
           name='AutoPare'
           subtitle='Frontend/Backend'
           src={atp}
+          modalHandler={modalHandler}
           details={{
             comment:
               'Web app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists. Due to Autotraders move to GraphQL, website is no longer functional.',
@@ -72,6 +73,7 @@ export default function Projects() {
         <ProjectCard
           name='Portfolio'
           subtitle='Frontend'
+          modalHandler={modalHandler}
           details={{
             comment:
               'Current portfolio page version. Main purpose was to use implement TailwindCSS, NextJS and to improve on web designing.',
@@ -84,6 +86,7 @@ export default function Projects() {
         <ProjectCard
           name='Grove Property'
           subtitle='Frontend'
+          modalHandler={modalHandler}
           details={{
             comment:
               'A prototype for property listing page with headless content management system for easy updates.',
@@ -96,6 +99,7 @@ export default function Projects() {
         <ProjectCard
           name='Calendar/Bookings'
           subtitle='Frontend'
+          modalHandler={modalHandler}
           details={{
             comment:
               'Attempt to create reusable custom styled calendar component with booking option. ',
@@ -108,6 +112,7 @@ export default function Projects() {
         <ProjectCard
           name='Weather Checker'
           subtitle='Frontend'
+          modalHandler={modalHandler}
           details={{
             comment:
               "Early project to practice working with React and API's. Dynamic search result display, data storage in localstorage.",

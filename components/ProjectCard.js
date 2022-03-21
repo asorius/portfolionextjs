@@ -9,14 +9,12 @@ export default function ProjectCard({
   subtitle = 'Subtitle',
   details = 'Placeholder',
   src = false,
+  modalHandler,
 }) {
   const [isVisible, setVisible] = React.useState(true);
   const [isOpen, setOpen] = React.useState(false);
   const domRef = React.useRef();
-  const [modalOpen, setModalOpen] = React.useState(false);
-  const handler = (val) => {
-    setModalOpen(val || !modalOpen);
-  };
+
   React.useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
@@ -32,8 +30,7 @@ export default function ProjectCard({
       className={`snap-proximity relative flex flex-col items-center justify-center max-w-sm mx-auto p-2 m-10 py-10 lg:max-h-[50rem] z-20 ${
         isVisible ? 'animate-fader' : 'animate-fade-out'
       }`}>
-      <ImageModal src={src} handler={handler} />
-      <Modal image={src} handler={handler} isOpen={modalOpen} />
+      <ImageModal src={src} handler={modalHandler} />
       <div className='w-56 -mt-10 overflow-hidden bg-accent rounded-lg shadow-lg md:w-64 dark:bg-accent-secondary z-20 '>
         <h3 className='py-2  tracking-wide text-center text-text-light dark:text-text-dark '>
           {name}

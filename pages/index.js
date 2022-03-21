@@ -5,8 +5,12 @@ import Bulb from '../components/Bulb';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import About from '../components/About';
+import Modal from '../components/Modal';
 export default function Home() {
   const [theme, setTheme] = React.useState('light');
+  const [modalOpen, setModalOpen] = React.useState(false);
+  const [modalImage, setModalImage] = React.useState(false);
+
   React.useEffect(() => {
     if (
       window.matchMedia &&
@@ -21,9 +25,14 @@ export default function Home() {
     theme === 'light' ? setTheme('dark') : setTheme('light');
     document.documentElement.classList.toggle('dark');
   };
+  const modalHandler = (src) => {
+    setModalOpen(!modalOpen);
+    setModalImage(src);
+  };
   // console.log(window.matchMedia('(prefers-color-scheme: dark)'));
   return (
     <div className='bg-bg-light dark:bg-bg-dark relative'>
+      <Modal image={modalImage} handler={setModalOpen} isOpen={modalOpen} />
       <Bulb theme={theme} toggler={toggleTheme} />
       <Head>
         <title>A.Sorius</title>
@@ -61,7 +70,7 @@ export default function Home() {
       <Landing></Landing>
       <main className='w-full'>
         <Skills />
-        <Projects />
+        <Projects modalHandler={modalHandler} />
         <About />
       </main>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export function Modal({ isOpen, image, handler }) {
+export default function Modal({ isOpen, image, handler }) {
   const parent = React.useRef();
   React.useEffect(
     () =>
@@ -13,13 +13,22 @@ export function Modal({ isOpen, image, handler }) {
   return (
     <div
       ref={parent}
-      onClick={() => handler(false)}
+      onClick={() => handler()}
       className={`${
-        isOpen ? 'absolute z-[100]' : 'hidden'
-      } top-0 -left-[29%] lg:-left-[100%] h-screen w-screen lg:w-[90vw] bg-neutral-700 cursor-pointer animate-fade-in-fast overflow-x-hidden overflow-y-scroll`}
+        isOpen ? 'fixed z-[100] ' : 'hidden'
+      } top-0 left-0 h-screen w-screen bg-neutral-900 cursor-pointer animate-fade-in-fast overflow-x-hidden overflow-y-scroll flex justify-center items-center`}
       title='Close'>
-      <div className='h-11/12 w-11/12 lg:h-9/12 mx-auto py-8'>
-        {image && <Image src={image} alt='Full size image' />}
+      <div className='h-11/12 w-11/12 lg:h-9/12 '>
+        {image && (
+          <Image
+            src={image}
+            alt='Full size image'
+            width='100%'
+            height='100%'
+            layout='responsive'
+            // objectFit='contain'
+          />
+        )}
       </div>
     </div>
   );
