@@ -26,7 +26,7 @@ export default function Modal({ isOpen, image, handler }) {
             width='100%'
             height='100%'
             layout='responsive'
-            // objectFit='contain'
+            // objectFit='contain' STOPPED HERE
           />
         )}
       </div>
