@@ -1,15 +1,11 @@
-import { Modal } from './Modal';
 import React from 'react';
-import Image from 'next/image';
+import spinner from '../images/Spinner-2.gif';
 export default function ImageModal({ src: image, handler }) {
   return (
     <div
       className='w-full h-64 lg:h-80 bg-gray-300 bg-cover rounded-lg shadow-md relative'
       style={{
-        backgroundImage: `url(${
-          image?.src ||
-          'https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80'
-        })`,
+        backgroundImage: `url(${image?.src || spinner})`,
       }}>
       <button
         onClick={() => {
