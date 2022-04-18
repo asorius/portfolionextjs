@@ -6,6 +6,7 @@ import FadeInner from './FadeInner';
 import atp from '../public/atp.png';
 import port from '../public/port.png';
 import wap from '../public/wap.png';
+import grove from '../public/grove.png';
 export default function Projects({ modalHandler }) {
   return (
     <article
@@ -73,6 +74,7 @@ export default function Projects({ modalHandler }) {
         <ProjectCard
           name='Portfolio'
           subtitle='Frontend'
+          src={port}
           modalHandler={modalHandler}
           details={{
             comment:
@@ -86,6 +88,7 @@ export default function Projects({ modalHandler }) {
         <ProjectCard
           name='Grove Property'
           subtitle='Frontend'
+          src={grove}
           modalHandler={modalHandler}
           details={{
             comment:
@@ -112,6 +115,7 @@ export default function Projects({ modalHandler }) {
         <ProjectCard
           name='Weather Checker'
           subtitle='Frontend'
+          src={wap}
           modalHandler={modalHandler}
           details={{
             comment:
