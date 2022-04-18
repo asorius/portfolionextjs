@@ -31,7 +31,7 @@ export default function Home() {
   };
   // console.log(window.matchMedia('(prefers-color-scheme: dark)'));
   return (
-    <div className='bg-bg-light dark:bg-bg-dark relative'>
+    <div className='bg-bg-light dark:bg-bg-dark relative '>
       <Modal image={modalImage} handler={setModalOpen} isOpen={modalOpen} />
       <Bulb theme={theme} toggler={toggleTheme} />
       <Head>
