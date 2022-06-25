@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function CardBody({ comment, stack, links, openState }) {
   return (
     <div
-      className={`w-full transition duration-200 ease-in-out rounded drop-shadow-lg dark:text-text-dark-dark text-center lg:z-10 p-0 n transform -translate-y-10 max-h-auto ${
-        openState ? ' opacity-1' : ' opacity-0 max-h-1'
+      className={`w-full transition duration-200 ease-in-out rounded drop-shadow-lg dark:text-text-dark-dark text-center lg:-z-10 p-0 transform -translate-y-10 lg:-translate-y-1 max-h-auto ${
+        openState
+          ? 'opacity-1'
+          : 'opacity-0 max-h-1 lg:max-h-auto scale-0 lg:h-full '
+        //fucking not showing on lg viewport
       }`}
     >
       <div className="bg-gray-200 dark:bg-gray-700 text-text-dark dark:text-text-light h-full w-full p-4 flex flex-col rounded-lg pt-14 ">
