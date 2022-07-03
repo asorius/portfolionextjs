@@ -25,7 +25,7 @@ export default function ProjectCard({
   return (
     <div
       ref={domRef}
-      className={`snap-proximity relative flex flex-col items-center justify-center max-w-sm mx-auto p-2 m-10 py-10 lg:max-h-[50rem] z-20 ${
+      className={`snap-proximity relative flex flex-col items-center grow max-w-sm mx-auto p-2 m-10 py-10  z-20 ${
         isVisible ? 'animate-fader' : 'animate-fade-out'
       }`}>
       <ImageModal src={src} handler={modalHandler} />
