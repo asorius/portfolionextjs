@@ -150,7 +150,7 @@ export default function Landing() {
           </h2>
           <button
             title='See my projects'
-            className='opacity-0 animate-fade-in-long duration-500 bg-button-primary  text-text-light dark:text-text-light font-semibold py-2 px-4 rounded hover:bg-accent-darkmode hover:text-text-dark hover:dark:bg-accent-secondary hover:dark:text-text-dark'>
+            className='opacity-0 animate-fade-in-long bg-button-primary  text-text-light dark:text-text-light font-semibold py-2 px-4 rounded hover:bg-accent-darkmode hover:text-text-dark hover:dark:bg-accent-secondary hover:dark:text-text-dark'>
             <Link href='#projects'>
               <a>
                 My Projects{' '}

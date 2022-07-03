@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const timers = { fast: '.5s', med: '.8s', long: '.9s' };
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -101,16 +102,16 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in-down': '3s fade-in-down 3s ease-out forwards',
+        'fade-in-down': '1s fade-in-down 3s ease-out forwards',
         fader: 'fade-in-down 1s ease-out forwards',
         'fade-in-down-nav': '1s fade-in-down 2s ease-out forwards',
         'fade-in': 'fade-in  2s linear forwards',
-        'fade-in-fast': 'fade-in  .5s linear forwards',
-        'fade-out': 'fade-out  1s linear forwards',
-        'fade-in-long': '3s fade-in 2s linear forwards',
-        ASletters: 'fade-in-down 3s ease-out forwards',
-        'firstname-fade': '1s fade-in  3s linear forwards',
-        'lastname-fade': '3s fade-in  3s linear forwards',
+        'fade-in-fast': 'fade-in  .2s linear forwards',
+        'fade-out': 'fade-out  .8s linear forwards',
+        'fade-in-long': `${timers.long} fade-in 1.1s linear forwards`,
+        ASletters: 'fade-in-down 1.5s ease-out forwards',
+        'firstname-fade': `${timers.med} fade-in  1.5s linear forwards`,
+        'lastname-fade': `${timers.long} fade-in  1.4s linear forwards`,
         liner: '1.6s liner 1s linear forwards',
         baller: 'baller 5s linear  infinite',
         slideright: 'slide-in-right 1s linear forwards',
