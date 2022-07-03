@@ -105,6 +105,7 @@ module.exports = {
         fader: 'fade-in-down 1s ease-out forwards',
         'fade-in-down-nav': '1s fade-in-down 2s ease-out forwards',
         'fade-in': 'fade-in  2s linear forwards',
+        'fade-in-fast': 'fade-in  .5s linear forwards',
         'fade-out': 'fade-out  1s linear forwards',
         'fade-in-long': '3s fade-in 2s linear forwards',
         ASletters: 'fade-in-down 3s ease-out forwards',
@@ -116,9 +117,6 @@ module.exports = {
         hoverer: 'hover-animation .2s linear forwards',
         wave1: ' waving 4s ease-in-out   infinite',
         wave2: ' waving 5.3s ease-in-out   infinite',
-      },
-      backgroundImage: {
-        'svg-pattern': "url('/public/stargrid.svg')",
       },
     },
   },
