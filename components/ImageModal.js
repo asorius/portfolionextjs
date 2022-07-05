@@ -3,9 +3,9 @@ import spinner from '../images/Spinner-2.gif';
 export default function ImageModal({ src: image, handler }) {
   return (
     <div
-      className='w-full h-64 lg:h-80 bg-gray-300 bg-cover rounded-lg shadow-md relative '
+      className='w-full h-64 lg:h-80 bg-cover rounded-lg shadow-md relative '
       style={{
-        backgroundImage: `url(${image?.src || spinner})`,
+        backgroundImage: `url(${image?.src || spinner.src})`,
       }}>
       <button
         onClick={() => {
