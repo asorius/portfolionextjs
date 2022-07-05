@@ -13,6 +13,8 @@ import FadeInner from './FadeInner';
 import Skewed from './Skewed';
 import Heading from './Heading';
 export default function Skills() {
+  const dividerStyling =
+    'lg:hidden w-3/4 mx-auto h-1 bg-gradient-to-r rounded-lg mt-8 ';
   return (
     <article
       className='w-full before:h-12 before:block bg-container dark:bg-container-dark pb-20 overflow-hidden'
@@ -26,6 +28,10 @@ export default function Skills() {
             <h3 className={heading2}>
               <Skewed text='Frontend' />
             </h3>
+            <div
+              className={
+                dividerStyling + 'from-accent-secondary to-accent'
+              }></div>
             <div className='grid gap-8 grid-cols-3 p-8'>
               <Image src={javascriptIcon} width={90} height={90} alt='icon' />
               <Image src={tailIcon} width={90} height={90} alt='icon' />
@@ -38,6 +44,11 @@ export default function Skills() {
             <h3 className={heading2}>
               <Skewed text='Backend' background='bg-accent' />
             </h3>
+            <div
+              className={
+                dividerStyling + 'from-accent to-accent-secondary'
+              }></div>
+
             <div className='grid gap-8 grid-cols-3 p-8'>
               <Image src={nodejsIcon} width={90} height={90} alt='icon' />
               <Image src={expressIcon} width={90} height={90} alt='icon' />
