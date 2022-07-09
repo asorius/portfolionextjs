@@ -8,7 +8,7 @@ export default function SideNavigation({ active = false, fn }) {
     ' first-letter:text-1xl first-letter:font-bold  hover:text-emerald-700';
   return (
     <div
-      className={` w-screen h-screen absolute top-0 right-0  ease-in-out duration-800 z-30   ${toggleClasses} lg:hidden`}>
+      className={` w-screen h-screen absolute top-0 right-0  ease-in-out duration-400 z-30   ${toggleClasses} lg:hidden`}>
       <div
         className={` w-1/2 h-full absolute top-0 right-0  ease-in-out duration-300 backdrop-blur-md bg-white/95 dark:bg-neutral-700/95 drop-shadow-md ${toggleClasses} flex flex-col justify-center items-center rounded`}>
         <ul
@@ -37,7 +37,7 @@ export default function SideNavigation({ active = false, fn }) {
         </ul>
       </div>
       <div
-        className={` w-full h-screen absolute top-0 left-0  ease-in-out duration-1000 -z-10  ${toggleClasses} backdrop-blur-3xl bg-black/30`}></div>
+        className={` w-full h-screen absolute top-0 left-0  ease-in-out duration-800 -z-10  ${toggleClasses} backdrop-blur-3xl bg-black/30`}></div>
     </div>
   );
 }
