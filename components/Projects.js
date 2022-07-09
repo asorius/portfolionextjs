@@ -7,7 +7,7 @@ import atp from '../images/atp.png';
 import port from '../images/port.png';
 import wap from '../images/wap.png';
 import grove from '../images/grove.png';
-export default function Projects({ modalHandler }) {
+export default function Projects() {
   return (
     <article
       className='w-full min-h-screen before:h-12 before:block relative'
@@ -54,7 +54,6 @@ export default function Projects({ modalHandler }) {
           name='AutoPare'
           subtitle='Frontend/Backend'
           src={atp}
-          modalHandler={modalHandler}
           details={{
             comment:
               'Web app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists. Due to Autotraders move to GraphQL, website is no longer functional.',
@@ -75,7 +74,6 @@ export default function Projects({ modalHandler }) {
           name='Portfolio'
           subtitle='Frontend'
           src={port}
-          modalHandler={modalHandler}
           details={{
             comment:
               'Current portfolio page version. Main purpose was to use implement TailwindCSS, NextJS and to improve on web designing.',
@@ -89,7 +87,6 @@ export default function Projects({ modalHandler }) {
           name='Grove Property'
           subtitle='Frontend'
           src={grove}
-          modalHandler={modalHandler}
           details={{
             comment:
               'A prototype for property listing page with headless content management system (Contentful). Individual property pages generated dynamically by GatsbyJS. Automatic display of recently added items in the landing page.',
@@ -103,7 +100,6 @@ export default function Projects({ modalHandler }) {
           name='Calendar/Bookings'
           subtitle='Frontend'
           src={grove}
-          modalHandler={modalHandler}
           details={{
             comment:
               'Exemplary booking-type website. Main aspect - custom calendar component with actions. ',
@@ -117,7 +113,6 @@ export default function Projects({ modalHandler }) {
           name='Weather Checker'
           subtitle='Frontend'
           src={wap}
-          modalHandler={modalHandler}
           details={{
             comment:
               "Project to practice working with React and API's. Dynamic search result display, local data storage in the browser. Dynamic images.",

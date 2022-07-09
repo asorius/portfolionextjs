@@ -7,7 +7,6 @@ export default function ProjectCard({
   subtitle = 'Subtitle',
   details = 'Placeholder',
   src = false,
-  modalHandler,
 }) {
   const [isVisible, setVisible] = React.useState(true);
   const [isOpen, setOpen] = React.useState(false);
@@ -28,7 +27,7 @@ export default function ProjectCard({
       className={`snap-proximity relative flex flex-col items-center grow max-w-sm mx-auto p-2 m-10 py-10  z-20 ${
         isVisible ? 'animate-fader' : 'animate-fade-out'
       }`}>
-      <ImageModal src={src} handler={modalHandler} />
+      <ImageModal src={src} />
       <CardHeader
         name={name}
         subtitle={subtitle}
