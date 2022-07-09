@@ -5,7 +5,7 @@ export default function Bulb({ theme, toggler }) {
   return (
     <div
       title='Light/dark mode'
-      className='w-5 h-10 pb-2 fixed bottom-10 right-5 z-20 text-center cursor-pointer  '
+      className='w-10 h-10 pb-2 fixed bottom-10 right-5 z-[200] text-center cursor-pointer'
       onClick={toggler}>
       <FontAwesomeIcon
         icon={faLightbulb}

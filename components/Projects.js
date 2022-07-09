@@ -10,7 +10,7 @@ import grove from '../images/grove.png';
 export default function Projects() {
   return (
     <article
-      className='w-full min-h-screen before:h-12 before:block relative'
+      className='w-full min-h-screen before:h-12 before:block relative '
       id='projects'>
       <h2 className={heading1}>
         <Heading title='Projects' direction={true}></Heading>
@@ -49,7 +49,7 @@ export default function Projects() {
           </g>
         </svg>
       </FadeInner>
-      <div className='mt-8 pt-4 pb-8 -z-1 container mx-auto lg:grid lg:grid-cols-2 lg:max-w-4xl lg:items-stretch bg-svg-pattern'>
+      <div className='mt-8 pt-4 pb-8 px-4 -z-1 container mx-auto lg:grid lg:grid-cols-2 lg:max-w-4xl lg:items-stretch bg-svg-pattern'>
         <ProjectCard
           name='AutoPare'
           subtitle='Frontend/Backend'
