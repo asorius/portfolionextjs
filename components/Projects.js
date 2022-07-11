@@ -5,7 +5,7 @@ import Heading from './Heading';
 import FadeInner from './FadeInner';
 import atp from '../images/atp.png';
 import port from '../images/port.png';
-import wap from '../images/wap.png';
+import wap from '../images/wther.png';
 import grove from '../images/grove.png';
 export default function Projects() {
   return (
@@ -56,7 +56,7 @@ export default function Projects() {
           src={atp}
           details={{
             comment:
-              'Web app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists. Due to Autotraders move to GraphQL, website is no longer functional.',
+              'Single page webb app to create and share lists of interested cars from AutoTrader with an instant check of MOT and mileage history. Ability to create shareable lists. Due to Autotraders move to GraphQL, website is no longer functional. Static exemplary data for display.',
             stack: [
               'React',
               'Material UI',
@@ -70,17 +70,18 @@ export default function Projects() {
               hub: 'https://github.com/asorius/autotest',
             },
           }}></ProjectCard>
+
         <ProjectCard
-          name='Portfolio'
+          name='Weather Checker'
           subtitle='Frontend'
-          src={port}
+          src={wap}
           details={{
             comment:
-              'Current portfolio page version. Main purpose was to use implement TailwindCSS, NextJS and to improve on web designing.',
-            stack: ['React', 'NextJS', 'TailwindCSS'],
+              'React/Typescript app for weather forecast display. Suggestive search (using 3rd party API for values). Data retrieved through API endpoints from WeatherAPI. Graph generation using SVG elements. Responsive layout.',
+            stack: ['React', 'Typescript', 'WeatherAPI', 'TailwindCSS'],
             links: {
-              live: 'https://asorius.netlify.com/',
-              hub: 'https://github.com/asorius/portfolionext',
+              live: 'https://wthere.netlify.app',
+              hub: 'https://github.com/asorius/weatherer',
             },
           }}></ProjectCard>
         <ProjectCard
@@ -97,6 +98,19 @@ export default function Projects() {
             },
           }}></ProjectCard>
         <ProjectCard
+          name='Portfolio'
+          subtitle='Frontend'
+          src={port}
+          details={{
+            comment:
+              'Current portfolio page version. Main purpose was to use implement TailwindCSS, NextJS and to improve on web design. ',
+            stack: ['React', 'NextJS', 'TailwindCSS'],
+            links: {
+              live: 'https://asorius.netlify.com/',
+              hub: 'https://github.com/asorius/portfolionext',
+            },
+          }}></ProjectCard>
+        <ProjectCard
           name='Calendar/Bookings'
           subtitle='Frontend'
           src={grove}
@@ -107,19 +121,6 @@ export default function Projects() {
             links: {
               live: 'https://autopare.herokuapp.com/',
               hub: 'https://github.com/asorius/react-calendar',
-            },
-          }}></ProjectCard>
-        <ProjectCard
-          name='Weather Checker'
-          subtitle='Frontend'
-          src={wap}
-          details={{
-            comment:
-              "Project to practice working with React and API's. Dynamic search result display, local data storage in the browser. Dynamic images.",
-            stack: ['React', 'WeatherAPI', 'TailwindCSS'],
-            links: {
-              live: 'https://asorius.github.io/WeatherApp/',
-              hub: 'https://github.com/asorius/WeatherApp',
             },
           }}></ProjectCard>
       </div>
