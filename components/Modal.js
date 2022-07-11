@@ -3,7 +3,6 @@ import Image from 'next/image';
 import spinner from '../images/Spinner-2.gif';
 export default function Modal({ isOpen, image, handler }) {
   const parent = React.useRef();
-  console.log(spinner);
   React.useEffect(
     () =>
       parent.current.scrollIntoView({
