@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function About() {
   return (
     <section id='about' className='bg-container dark:bg-container-dark pb-10'>
-      <div className='container px-6 py-8 container mx-auto'>
+      <div className='container px-6 py-8 mx-auto'>
         <FadeInner>
           <h2 className={'dark:text-text-dark ' + heading1}>
             <Heading
@@ -59,8 +59,9 @@ export default function About() {
                 </Link>
                 <Link
                   href='mailto:sorius.arturas@gmail.com'
-                  title='Send me email'>
-                  <a title='Send me email' className='mx-2 inline-block'>
+                  passHref
+                  title='Email me'>
+                  <a title='Email me' className='mx-2 inline-block'>
                     <FontAwesomeIcon
                       icon={faEnvelope}
                       className='transition duration-300 hover:scale-112 w-7 h-7 text-text-dark fill-current dark:text-text-light dark:hover:text-accent-secondary hover:text-accent-secondary hover:scale-125'
