@@ -32,7 +32,7 @@ export default function About() {
               </p>
 
               <div className='flex justify-end items-center mt-6 -mx-2 md:justify-end'>
-                <Link href='https://linkedin.com'>
+                <Link href='linkedin.com/in/asorius'>
                   <a
                     className='mx-2 inline-block'
                     title='My LinkedIn'
