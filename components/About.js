@@ -32,13 +32,13 @@ export default function About() {
               </p>
 
               <div className='flex justify-end items-center mt-6 -mx-2 md:justify-end mb-10'>
-                <h3 className='font-bold relative '>
+                <h3 className='font-bold relative dark:text-text-light'>
                   Contact me here :{' '}
                   <svg
                     width='130'
                     height='130'
                     viewBox='0 0 130 130'
-                    className='absolute h-20 w-30 right-0 top-2 rotate-90 translate-x-[75%] fill-neutral-500 dark:fill-text-light'
+                    className='absolute h-20 w-30 right-0 top-2 rotate-90 translate-x-[75%] fill-accent dark:fill-accent-secondary -z-[20]'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'>
                     <path
@@ -85,7 +85,7 @@ export default function About() {
                   <a title='Email me' className='mx-2 inline-block'>
                     <FontAwesomeIcon
                       icon={faEnvelope}
-                      className='transition duration-300 hover:scale-112 w-7 h-7 text-text-dark fill-current dark:text-text-light dark:hover:text-accent-secondary hover:text-accent-secondary hover:scale-125'
+                      className='transition duration-300 hover:scale-112 w-7 h-7 text-text-dark fill-current dark:fill-text-light dark:hover:text-accent-secondary-darkmode hover:text-accent-secondary hover:scale-125'
                     />
                   </a>
                 </Link>
