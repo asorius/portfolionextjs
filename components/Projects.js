@@ -110,7 +110,7 @@ export default function Projects() {
               hub: 'https://github.com/asorius/portfolionext',
             },
           }}></ProjectCard>
-        <ProjectCard
+        {/* <ProjectCard
           name='Calendar/Bookings'
           subtitle='Frontend'
           src={grove}
@@ -122,7 +122,7 @@ export default function Projects() {
               live: 'https://autopare.herokuapp.com/',
               hub: 'https://github.com/asorius/react-calendar',
             },
-          }}></ProjectCard>
+          }}></ProjectCard> */}
       </div>
     </article>
   );
