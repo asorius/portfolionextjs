@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 export default function CornerLogo({ active }) {
-  const toggleClasses = ` ${active ? 'scale-150' : ''} `;
+  const toggleClasses = ` ${active ? 'scale-150' : 'scale-1'} `;
   return (
     <div
       title='Home'
-      className={` ${toggleClasses} h-full text-2xl pr-4 font-semibold flex flex-row justify-center z-10 ease-in-out duration-1000 cursor-pointer dark:text-text-light`}>
+      className={`h-full text-2xl pr-4 font-semibold flex flex-row justify-center z-10 ease-in-out duration-500 cursor-pointer dark:text-text-light ${toggleClasses}`}>
       <Link href='#home'>
         <a>
           <span className='relative pr-2'>
