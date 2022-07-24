@@ -53,7 +53,7 @@ export default function About() {
                     />
                   </svg>
                 </h3>
-                <Link href='linkedin.com/in/asorius'>
+                <Link href='https://linkedin.com/in/asorius'>
                   <a
                     className='mx-2 inline-block'
                     title='My LinkedIn'
