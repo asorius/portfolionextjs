@@ -33,11 +33,11 @@ export default function Skills() {
                 dividerStyling + 'from-accent-secondary to-accent'
               }></div>
             <div className='grid gap-8 grid-cols-3 p-8'>
-              <Image src={javascriptIcon} width={90} height={90} alt='icon' />
-              <Image src={tailIcon} width={90} height={90} alt='icon' />
-              <Image src={tsIcon} width={90} height={90} alt='icon' />
-              <Image src={reactIcon} width={90} height={90} alt='icon' />
-              <Image src={nextIcon} width={90} height={90} alt='icon' />
+              <Image src={javascriptIcon} alt='icon-js' />
+              <Image src={tailIcon} alt='icon-tail' />
+              <Image src={tsIcon} alt='icon-ts' />
+              <Image src={reactIcon} alt='icon-react' />
+              <Image src={nextIcon} alt='icon-next' />
             </div>
           </div>
           <div>
@@ -50,9 +50,9 @@ export default function Skills() {
               }></div>
 
             <div className='grid gap-8 grid-cols-3 p-8'>
-              <Image src={nodejsIcon} width={90} height={90} alt='icon' />
-              <Image src={expressIcon} width={90} height={90} alt='icon' />
-              <Image src={mongoIcon} width={90} height={90} alt='icon' />
+              <Image src={nodejsIcon} alt='icon-node' />
+              <Image src={expressIcon} alt='icon-exp' />
+              <Image src={mongoIcon} alt='icon-mongo' />
             </div>
           </div>
         </div>
