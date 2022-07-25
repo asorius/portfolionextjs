@@ -9,13 +9,13 @@ export default function Home() {
   const [theme, setTheme] = React.useState('light');
 
   React.useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    ) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
       setTheme('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
-    document.documentElement.className = 'scroll-smooth';
+    document.documentElement.classList.add('scroll-smooth');
   }, []);
 
   const toggleTheme = () => {
@@ -23,10 +23,9 @@ export default function Home() {
     document.documentElement.classList.toggle('dark');
   };
 
-  // console.log(window.matchMedia('(prefers-color-scheme: dark)'));
   return (
     <div className='bg-bg-light dark:bg-bg-dark relative '>
-      <Bulb theme={theme} toggler={toggleTheme} />
+      <Bulb toggler={toggleTheme} />
       <Head>
         <title>A.Sorius</title>
         {/* <link rel='icon' href='/favicon.ico' /> */}

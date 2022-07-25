@@ -1,15 +1,13 @@
 import React from 'react';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-export default function Bulb({ theme, toggler }) {
+export default function Bulb({ toggler }) {
   return (
     <div
       title='Light/dark mode'
       className='w-10 h-10 pb-2 fixed bottom-10 right-5 z-[200] text-center cursor-pointer'
-      onClick={toggler}>
+      onClick={() => toggler()}>
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        className='h-full w-full duration-100 stroke-current hover:stroke-yellow-500 '
+        className={`h-full w-full duration-100 stroke-current hover:stroke-yellow-500 dark:stroke-yellow-500 hover:dark:stroke-yellow-200`}
         fill='none'
         viewBox='0 0 24 24'
         strokeWidth='2'>
