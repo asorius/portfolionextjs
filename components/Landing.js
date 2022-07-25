@@ -148,19 +148,19 @@ export default function Landing() {
               />
             </svg>
           </h2>
-          <button
-            title='See my projects'
-            className='opacity-0 animate-fade-in-long bg-button-primary  text-text-light dark:text-text-light font-semibold py-2 px-4 rounded hover:bg-accent-darkmode hover:text-text-dark hover:dark:bg-accent-secondary hover:dark:text-text-dark'>
-            <Link href='#projects'>
-              <a>
+          <Link href='#projects'>
+            <a>
+              <button
+                title='See my projects'
+                className='opacity-0 animate-fade-in-long bg-button-primary  text-text-light dark:text-text-light font-semibold py-2 px-4 rounded hover:bg-accent-darkmode hover:text-text-dark hover:dark:bg-accent-secondary hover:dark:text-text-dark'>
                 My Projects{' '}
                 <FontAwesomeIcon
                   icon={faAngleDoubleDown}
                   className='h-5 w-5 animate-bounce inline-block dark:text-text-dark'
                 />
-              </a>
-            </Link>
-          </button>
+              </button>
+            </a>
+          </Link>
         </div>
       </div>
     </div>
