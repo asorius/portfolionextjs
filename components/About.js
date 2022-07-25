@@ -33,7 +33,7 @@ export default function About() {
 
               <div className='flex justify-end items-center mt-6 -mx-2 md:justify-end mb-10'>
                 <h3 className='font-bold relative dark:text-text-light'>
-                  Contact me here :{' '}
+                  Find me here :{' '}
                   <svg
                     width='130'
                     height='130'
