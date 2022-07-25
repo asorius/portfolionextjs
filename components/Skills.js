@@ -12,9 +12,12 @@ import Image from 'next/image';
 import FadeInner from './FadeInner';
 import Skewed from './Skewed';
 import Heading from './Heading';
+const front = [javascriptIcon, tailIcon, tsIcon, reactIcon, nextIcon];
+const back = [nodejsIcon, expressIcon, mongoIcon];
 export default function Skills() {
   const dividerStyling =
     'lg:hidden w-3/4 mx-auto h-1 bg-gradient-to-r rounded-lg mt-8 ';
+  const imgContainer = 'grid place-items-center max-w-[8rem] mx-auto';
   return (
     <article
       className='w-full before:h-12 before:block bg-container dark:bg-container-dark pb-20 overflow-hidden'
@@ -33,11 +36,11 @@ export default function Skills() {
                 dividerStyling + 'from-accent-secondary to-accent'
               }></div>
             <div className='grid gap-8 grid-cols-3 p-8'>
-              <Image src={javascriptIcon} alt='icon-js' />
-              <Image src={tailIcon} alt='icon-tail' />
-              <Image src={tsIcon} alt='icon-ts' />
-              <Image src={reactIcon} alt='icon-react' />
-              <Image src={nextIcon} alt='icon-next' />
+              {front.map((icon, i) => (
+                <div className={imgContainer} key={'icon-front-' + i}>
+                  <Image src={icon} alt='' />
+                </div>
+              ))}
             </div>
           </div>
           <div>
@@ -50,9 +53,11 @@ export default function Skills() {
               }></div>
 
             <div className='grid gap-8 grid-cols-3 p-8'>
-              <Image src={nodejsIcon} alt='icon-node' />
-              <Image src={expressIcon} alt='icon-exp' />
-              <Image src={mongoIcon} alt='icon-mongo' />
+              {back.map((icon, i) => (
+                <div className={imgContainer} key={'icon-back-' + i}>
+                  <Image src={icon} alt='' />
+                </div>
+              ))}
             </div>
           </div>
         </div>
